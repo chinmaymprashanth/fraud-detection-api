@@ -22,7 +22,7 @@ A machine learning API that detects fraudulent credit card transactions using a 
 ## 🎯 Project Overview
 
 * Train a fraud detection model using **RandomForestClassifier**
-* Use a **custom threshold (0.22)** for fraud decisioning
+* Use a **custom threshold (0.22)** for fraud decisioning: The fraud prediction threshold was set to 0.22 based on exploratory data analysis to optimize recall and reduce false negatives. This means any transaction with a predicted fraud probability above 0.22 is flagged as fraud.
 * Deploy as a **REST API** with `FastAPI`
 * Return **SHAP values** to explain each prediction
 * Dockerized for easy deployment
